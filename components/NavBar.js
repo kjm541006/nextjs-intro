@@ -1,18 +1,30 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import styles from "./NavBar.module.css";
+import styled from "styled-components";
+
+const NavBarStyle = styled.nav`
+  background-color: tomato;
+`;
+
+const LinkStyle = styled(Link)`
+  color: red;
+
+  &.active {
+    color: blue;
+  }
+`;
 
 const NavBar = () => {
   const router = useRouter();
   return (
-    <nav className={styles.nav}>
-      <Link href="/" className="Home" style={{ color: router.pathname === "/" ? "red" : "blue" }}>
+    <NavBarStyle>
+      <LinkStyle href="/" className={router.pathname === "/" && "active"}>
         Home
-      </Link>
-      <Link href="/about" style={{ color: router.pathname === "/about" ? "red" : "blue" }}>
+      </LinkStyle>
+      <LinkStyle href="/about" className={router.pathname === "/about" && "active"}>
         About
-      </Link>
-    </nav>
+      </LinkStyle>
+    </NavBarStyle>
   );
 };
 
