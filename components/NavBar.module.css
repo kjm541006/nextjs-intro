@@ -1,0 +1,11 @@
+.nav {
+  background-color: whitesmoke;
+}
+
+.link {
+  color: black;
+}
+
+.active {
+  color: blue;
+}
