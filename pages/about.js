@@ -1,9 +1,11 @@
-import NavBar from "@/components/NavBar";
+import Seo from "@/components/Seo";
+import Head from "next/head";
 import React from "react";
 
-const About = () => {
+const About = ({ title }) => {
   return (
     <div>
+      <Seo title="About" />
       <h1>About us</h1>
     </div>
   );

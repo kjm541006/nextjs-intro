@@ -13,28 +13,6 @@ const NavBar = () => {
         About
       </Link>
     </nav>
-    // <nav className="nav">
-    //   <Link href="/" className={router.pathname === "/" ? "active" : ""}>
-    //     <span>Home</span>
-    //   </Link>
-    //   <Link href="/about" className={router.pathname === "/about" ? "active" : ""}>
-    //     <span>About</span>
-    //   </Link>
-    //   <style jsx>
-    //     {`
-    //       nav {
-    //         background-color: tomato;
-    //       }
-    //       span {
-    //         text-decoration: none;
-    //         color: pink;
-    //       }
-    //       .active {
-    //         color: blue;
-    //       }
-    //     `}
-    //   </style>
-    // </nav>
   );
 };
 
