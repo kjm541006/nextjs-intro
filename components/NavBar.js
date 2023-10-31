@@ -6,12 +6,14 @@ const NavBar = () => {
   const router = useRouter();
   return (
     <nav className={styles.nav}>
-      <Link href="/" className={`${styles.link} ${router.pathname === "/" && styles.active}`}>
-        Home
-      </Link>
-      <Link href="/about" className={`${styles.link} ${router.pathname === "/about" && styles.active}`}>
-        About
-      </Link>
+      <div>
+        <Link href="/" className={`${styles.link} ${router.pathname === "/" && styles.active}`}>
+          Home
+        </Link>
+        <Link href="/about" className={`${styles.link} ${router.pathname === "/about" && styles.active}`}>
+          About
+        </Link>
+      </div>
     </nav>
   );
 };
