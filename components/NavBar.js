@@ -6,7 +6,7 @@ const NavBar = () => {
   const router = useRouter();
   return (
     <nav className={styles.nav}>
-      <img className={styles.img} src="/vercel.svg" />
+      <h1>인기 영화 드라마 순위</h1>
       <div>
         <Link href="/" className={`${styles.link} ${router.pathname === "/" && styles.active}`}>
           Home
